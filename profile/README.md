@@ -33,17 +33,24 @@ XIFty is designed to make metadata extraction more reliable, explainable, and po
 ## Language Packages
 
 - [XIFtyNode](https://github.com/XIFtySense/XIFtyNode)  
-  Official Node package for XIFty
+  Official Node package for XIFty. Canonical production package today.
 - [XIFtySwift](https://github.com/XIFtySense/XIFtySwift)  
   Official Swift binding for XIFty (source-first today)
 - [XIFtyPython](https://github.com/XIFtySense/XIFtyPython)  
-  Official Python binding for XIFty (source-first today)
+  Official Python binding for XIFty (release-ready wheel target on `macos-arm64` and `linux-x64`)
 - [XIFtyRust](https://github.com/XIFtySense/XIFtyRust)  
-  Official Rust binding for XIFty (source-first today)
+  Official Rust binding for XIFty (release-ready but still source-first)
 - [XIFtyGo](https://github.com/XIFtySense/XIFtyGo)  
   Official Go binding for XIFty (source-first today)
 - [XIFtyCpp](https://github.com/XIFtySense/XIFtyCpp)  
   Official C++ binding for XIFty (source-first today)
+
+## Binding Maturity
+
+- Node: canonical production package today
+- Python: self-contained wheel target on `macos-arm64` and `linux-x64`
+- Rust: runtime-backed and release-ready, but still source-first
+- Swift / Go / C++: source-first bindings
 
 ## Current Direction
 
@@ -66,4 +73,4 @@ If you are comparing metadata solutions, start with:
 
 ## Status
 
-XIFty is actively evolving, but it is already usable today through the core repo, the live browser demo, and the public binding repos. Node is currently the most turnkey binding; the others are usable and CI-backed, but still more source-first than fully packaged.
+XIFty is actively evolving, but it is already usable today through the core repo, the live browser demo, and the public binding repos. Node is currently the most turnkey binding. Python is now the first self-contained package target beyond Node. Rust is cleaner and more release-ready now, but still intentionally source-first. Swift, Go, and C++ remain source-first bindings.
